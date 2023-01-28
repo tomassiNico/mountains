@@ -1,14 +1,10 @@
-import { useState } from "react";
 import "./App.css";
-import MountainList from "./components/mountains/MountainList";
-import Header from "./components/shared/Header";
+import Router from "./routes/Router";
+
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <MountainList />
-    </div>
+    <Router />
   );
 }
 

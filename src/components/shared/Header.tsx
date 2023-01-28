@@ -5,7 +5,7 @@ const Header : FC = () => {
   return (
     <div className="header">
       <img className="header-img-logo"alt="img-logo" src="/mountain.png"/>
-      <a href="#default" className="logo">Mountains</a>
+      <a href="/" className="logo">Mountains</a>
     </div>
   )
 }
