@@ -1,0 +1,102 @@
+.mountains-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.mountain-item {
+  flex: auto;
+  padding: 0 0 16px 0;
+  border: 1px solid #000;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.7);
+  transition: 1s;
+  margin: 16px;
+}
+
+
+@media (min-width: 640px) {
+  .mountain-item {
+    width:  40%;
+  }
+}
+
+.mountain-item>img {
+  width: 100%;
+}
+
+.mountain-altitude {
+  font-weight: lighter;
+}
+
+.green-icon {
+  color: green;
+}
+
+.yellow-icon {
+  color: rgb(185, 164, 25);
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-container>.status {
+  padding: 4px 4px 0 4px;
+  font-weight: bolder;
+}
+
+.mountain-img {
+  border-radius: 16px 16px 0 0;
+  max-height: 350px;
+}
+
+.sort-label {
+  font-size: small;
+  font-weight: 500;
+}
+
+.sort-select {
+  border: 0 solid #000;
+  background-color: rgb(0, 0, 0, 0.1);
+  height: 40px;
+  width: 100px;
+  align-items: center;
+  text-align: center;
+}
+
+.sort-select-option {
+  font-size: large;
+  padding: 20px;
+}
+
+.sort-container {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.sort-list {
+  list-style-type: none;
+  max-width: 120px;
+}
+
+.sort-item {
+  border-radius: 16px;
+  width: 100%;
+  background-color: rgba(0,0,0,0.7);
+  margin: 4px 16px;
+}
+
+.sort-list-container {
+  position: absolute;
+  transform: translate(-12px, 32px);
+}
+
+.sort-button {
+  border: 1px solid rgb(0, 0, 0, 0.1);
+  width: 100%;
+}
