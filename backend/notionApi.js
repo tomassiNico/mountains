@@ -1,8 +1,7 @@
 const axios = require('axios')
 
-const secretKey = "secret_c2tRpbMZUfGxPhfoDuWIQT8nq6qmoCovwtIb8h5R43U";
+const secretKey = process.env['NOTION_SECRET'];
 
-// What we'll pass into axios
 const headers = {
   "Content-Type": "application/json",
   Authorization: `Bearer ${secretKey}`,
@@ -15,10 +14,9 @@ const notionApi = axios.create({
   headers,
 });
 
-const mountainDatabaseId = "e50117ca45c744f2ae6276dec8cde2b0";
+const mountainDatabaseId = process.env['NOTION_DATABASE_ID'];
 
 const mapMountain = (data) => {
-  //debugger
   const {
     id,
     created_time: created_at,
